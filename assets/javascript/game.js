@@ -32,13 +32,13 @@ $('.crystal').click(function() {
 	console.log(val + "... " + score + " + " + colorVals[val] + " = ");
 	score += colorVals[val];
 	console.log(score);
-	$('#total-score').html(score);
 
 	if (score == randomNumber) {
 		wins++;
 		$('#wins').html(wins);
 		console.log("WIN!");
 		score = 0;
+
 		generateNumbers();
 	} else if (score > randomNumber) {
 		losses++;
@@ -47,6 +47,7 @@ $('.crystal').click(function() {
 		score: 0;
 		generateNumbers();
 	}
+	$('#total-score').html(score);
 })
 
 
