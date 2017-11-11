@@ -38,7 +38,7 @@ $('.crystal').click(function() {
 		wins++;
 		$('#wins').html(wins);
 		console.log("WIN!");
-		score; 0;
+		score = 0;
 		generateNumbers();
 	} else if (score > randomNumber) {
 		losses++;
